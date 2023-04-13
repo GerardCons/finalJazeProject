@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="addHoliday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="addLeave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="attendancesList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="createCredential.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="createDeduction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="createEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="createPayroll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="credentialList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="employeeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="homeScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="leaveList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="loginScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="payrollList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="payslip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="searchWitholdings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="updateAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="updateCredential.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="updateEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="updateEmployeePay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="updateLeave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="viewPayrollReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
