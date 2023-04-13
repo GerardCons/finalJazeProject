@@ -28,29 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbl_payrollId = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.lbl_period = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.lbl_payrollId = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.finalSalary = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.deduction = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dailyRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.grossPay = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lbl_total = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.grossPay = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dailyRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.deduction = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.finalSalary = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -68,6 +71,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 74);
             this.panel1.TabIndex = 1;
+            // 
+            // lbl_payrollId
+            // 
+            this.lbl_payrollId.AutoSize = true;
+            this.lbl_payrollId.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_payrollId.Location = new System.Drawing.Point(660, 42);
+            this.lbl_payrollId.Name = "lbl_payrollId";
+            this.lbl_payrollId.Size = new System.Drawing.Size(35, 16);
+            this.lbl_payrollId.TabIndex = 6;
+            this.lbl_payrollId.Text = "0001";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(598, 42);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(65, 16);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Payroll ID:";
             // 
             // lbl_period
             // 
@@ -119,26 +142,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "CT TRADING HARDWARE AND CONSTRUCTION SUPPLIES ";
             // 
-            // lbl_payrollId
-            // 
-            this.lbl_payrollId.AutoSize = true;
-            this.lbl_payrollId.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_payrollId.Location = new System.Drawing.Point(660, 42);
-            this.lbl_payrollId.Name = "lbl_payrollId";
-            this.lbl_payrollId.Size = new System.Drawing.Size(35, 16);
-            this.lbl_payrollId.TabIndex = 6;
-            this.lbl_payrollId.Text = "0001";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(598, 42);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 16);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Payroll ID:";
-            // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
@@ -147,14 +150,14 @@
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeight = 30;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -164,14 +167,14 @@
             this.dailyRate,
             this.deduction,
             this.finalSalary});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.Location = new System.Drawing.Point(0, 95);
             this.dataGridView1.Name = "dataGridView1";
@@ -206,38 +209,39 @@
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.lbl_total);
             this.panel3.Location = new System.Drawing.Point(104, 398);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(696, 51);
             this.panel3.TabIndex = 14;
             // 
-            // finalSalary
+            // lbl_total
             // 
-            this.finalSalary.HeaderText = "NET PAY";
-            this.finalSalary.Name = "finalSalary";
-            this.finalSalary.ReadOnly = true;
-            this.finalSalary.Width = 140;
+            this.lbl_total.AutoSize = true;
+            this.lbl_total.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_total.Location = new System.Drawing.Point(589, 17);
+            this.lbl_total.Name = "lbl_total";
+            this.lbl_total.Size = new System.Drawing.Size(68, 21);
+            this.lbl_total.TabIndex = 2;
+            this.lbl_total.Text = "TOTALS";
             // 
-            // deduction
+            // label5
             // 
-            this.deduction.HeaderText = "DEDUCTION";
-            this.deduction.Name = "deduction";
-            this.deduction.ReadOnly = true;
-            this.deduction.Width = 140;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(551, 17);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(42, 21);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "PHP";
             // 
-            // dailyRate
+            // id
             // 
-            this.dailyRate.HeaderText = "DAILY RATE";
-            this.dailyRate.Name = "dailyRate";
-            this.dailyRate.ReadOnly = true;
-            this.dailyRate.Width = 120;
-            // 
-            // grossPay
-            // 
-            this.grossPay.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.grossPay.HeaderText = "Gross Pay";
-            this.grossPay.Name = "grossPay";
-            this.grossPay.ReadOnly = true;
+            this.id.HeaderText = "ID";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            this.id.Width = 60;
             // 
             // name
             // 
@@ -247,12 +251,33 @@
             this.name.Name = "name";
             this.name.ReadOnly = true;
             // 
-            // id
+            // grossPay
             // 
-            this.id.HeaderText = "ID";
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            this.id.Width = 70;
+            this.grossPay.HeaderText = "Gross Pay";
+            this.grossPay.Name = "grossPay";
+            this.grossPay.ReadOnly = true;
+            this.grossPay.Width = 140;
+            // 
+            // dailyRate
+            // 
+            this.dailyRate.HeaderText = "DAILY RATE";
+            this.dailyRate.Name = "dailyRate";
+            this.dailyRate.ReadOnly = true;
+            this.dailyRate.Width = 140;
+            // 
+            // deduction
+            // 
+            this.deduction.HeaderText = "DEDUCTION";
+            this.deduction.Name = "deduction";
+            this.deduction.ReadOnly = true;
+            this.deduction.Width = 140;
+            // 
+            // finalSalary
+            // 
+            this.finalSalary.HeaderText = "NET PAY";
+            this.finalSalary.Name = "finalSalary";
+            this.finalSalary.ReadOnly = true;
+            this.finalSalary.Width = 140;
             // 
             // viewPayrollReport
             // 
@@ -272,6 +297,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -289,12 +316,14 @@
         private DataGridView dataGridView1;
         private Panel panel2;
         private Label label11;
+        private Panel panel3;
         private DataGridViewTextBoxColumn id;
         private DataGridViewTextBoxColumn name;
         private DataGridViewTextBoxColumn grossPay;
         private DataGridViewTextBoxColumn dailyRate;
         private DataGridViewTextBoxColumn deduction;
         private DataGridViewTextBoxColumn finalSalary;
-        private Panel panel3;
+        private Label label5;
+        private Label lbl_total;
     }
 }

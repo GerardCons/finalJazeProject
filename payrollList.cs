@@ -277,5 +277,17 @@ namespace CTHardware_EmployeeManagement
         {
 
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+
+            viewPayrollReport frm = new viewPayrollReport(this);
+
+            frm.lbl_payrollId.Text = cb_payId.Text;
+            frm.lbl_period.Text = tbt_from.Text + " - " + tbt_to.Text;
+         
+
+            frm.ShowDialog();
+        }
     }
 }
