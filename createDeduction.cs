@@ -75,6 +75,8 @@ namespace CTHardware_EmployeeManagement
 
         private void button4_Click(object sender, EventArgs e)
         {
+            float value = float.Parse(tb_amount.Text);
+            double roundedValue = Math.Round(value, 2);
 
             List<EmployeePayroll> employeePayrolls = new List<EmployeePayroll>();
             try
@@ -93,7 +95,7 @@ namespace CTHardware_EmployeeManagement
                         cm.Parameters.AddWithValue("@lastName", tb_lastName.Text);
                         cm.Parameters.AddWithValue("@position", tb_position.Text);
                         cm.Parameters.AddWithValue("@date", date);
-                        cm.Parameters.AddWithValue("@amount", float.Parse(tb_amount.Text));
+                        cm.Parameters.AddWithValue("@amount", roundedValue);
                         cm.Parameters.AddWithValue("@reason", rtb_reason.Text);
                         cm.Parameters.AddWithValue("@deductionId", tb_deductionId.Text);
                         cm.ExecuteNonQuery();
@@ -174,7 +176,7 @@ namespace CTHardware_EmployeeManagement
                             }
                         }
 
-                        deductions = deductions + float.Parse(tb_amount.Text);
+                        deductions = deductions + float.Parse(roundedValue.ToString());
                         netPay = netPay - (deductions);
                 
 
